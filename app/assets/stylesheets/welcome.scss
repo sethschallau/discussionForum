@@ -53,7 +53,6 @@ img {
 	font-family: "Helvetica";
 	font-style: italic;
 	letter-spacing: 0px;
-	width: 100%;
 	border: 2px solid #515d4b;
 	border-left: none;
 	border-top: none;
@@ -63,4 +62,14 @@ img {
 .links{
 	border: 2px solid #515d4b;
 	
+}
+
+.home{
+	font-family: "Helvetica";
+	margin: 1em;
+	text-align: center;
+	color: #ebedeb;
+	background-color: #b1b7af;
+	height: 85%;
+	padding: 20px;
 }
