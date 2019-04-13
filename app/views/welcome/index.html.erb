@@ -23,6 +23,24 @@
 	</div>
 	<div class ="home">
 		<h2>Welcome to Toppy!</h2>
+		
+		<h1>New Article</h1>
+		<%= form_for :topics do |f| %>
+		
+		<p><strength>Please enter your desired topic:</strength></p>
+ 
+ 	 	<p>
+    		<%= f.label :title %><br>
+    		<%= f.text_field :title %>
+  		</p>
+
+ 
+  		<p>
+    		<%= f.submit %>
+  		</p>
+ 
+		<% end %>
 	</div>
+
 </body>
 </html>
