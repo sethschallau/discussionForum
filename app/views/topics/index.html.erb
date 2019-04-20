@@ -1,9 +1,11 @@
+<body class = "background">
 <h1>Topic Admin Page</h1>
  
 <table>
   <tr>
     <th>Name</th>
     <th>Description</th>
+    <th>Moderated</th>
   </tr>
  
   <% @topics.each do |topic| %>
@@ -12,6 +14,12 @@
       <td><%= topic.description %></td>
       <td><%= topic.isModerated %></td>
       <td><%= link_to 'Show', topic_path(topic) %></td>
+      <td><%= link_to 'Edit', edit_topic_path(topic) %></td>
+      <td><%= link_to 'Destroy',
+                                  topic_path(topic),
+                                  method: :delete,
+                                  data: {confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
 </table>
+</body>

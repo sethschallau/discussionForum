@@ -6,7 +6,9 @@
 <p>
 	<%= @topic.description %>
 </p>
+<%= link_to 'Topic List', topics_path %>
 </body>
+
 <h2>Posts</h2>
 <% @topic.posts.each do |post| %>
 	<p>
