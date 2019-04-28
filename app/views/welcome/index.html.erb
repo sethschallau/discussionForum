@@ -6,18 +6,10 @@
 		<h1>Toppy</h1>
 		<div class="links">
 			<p>
-				automobiles
-				&nbsp;
-				fitness
-				&nbsp;
-				music
-				&nbsp;
-				news
-				&nbsp;
-				sports
-				&nbsp;
-				technology
-				&nbsp;
+				<% @topics.each do |topic| %>
+						<%= link_to topic.name, topic_path(topic) %>
+						&nbsp;
+			  <% end %>
 			</p>
 		</div>
 	</div>
