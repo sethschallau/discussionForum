@@ -1,0 +1,36 @@
+<body class = "background">
+<p>
+	<%= @topic.name %>
+</p>
+
+<p>
+	<%= @topic.description %>
+</p>
+<%= link_to 'Topic List', topics_path %>
+</body>
+
+<h2>Posts</h2>
+<% @topic.posts.each do |post| %>
+	<p>
+		<strong>Title:</strong>
+		<%= post.title %>
+	</p>
+	<p>
+		<strong>Text:</strong>
+		<%= post.text %>
+	</p>
+<% end %>
+<h2>Add a Post</h2>
+<%= form_for([@topic, @topic.posts.build]) do |f| %>
+	<p>
+		<%= f.label :title %> <br>
+		<%= f.text_field :title %>
+	</p>
+	<p>
+		<%= f.label :text %><br>
+		<%= f.text_area :text%>
+	</p>
+	<p>
+		<%= f.submit %>
+	</p>
+<% end %>
