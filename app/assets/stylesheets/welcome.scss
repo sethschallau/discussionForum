@@ -36,6 +36,26 @@
    cursor: pointer;
    display: inline-block;
 }
+   a:hover, a:active {
+   background-color: #778173;
+}
+
+}
+
+.newTopic{
+	a:link, a:visited {
+    background-color: #9ea59b;
+    border: none;
+    color: #FFFFFF;
+    padding: 10px 32px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+		font-size: 16px;
+   cursor: pointer;
+   display: inline-block;
+}
 
 a:hover, a:active {
    background-color: #778173;
@@ -51,6 +71,7 @@ a:hover, a:active {
 	background-color: #b1b7af;
 	height: 40em;
 	padding: 20px;
+
 img{
 	border:none;
 	width:400px;

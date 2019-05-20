@@ -45,3 +45,24 @@ img {
 	background-color: #b1b7af;
 	padding: 20px;
 }
+
+.topicList{
+	a:link, a:visited {
+    background-color: #9ea59b;
+    border: none;
+    color: #FFFFFF;
+    padding: 10px 32px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+		font-size: 16px;
+   cursor: pointer;
+   display: inline-block;
+}
+
+a:hover, a:active {
+   background-color: #778173;
+}
+
+}

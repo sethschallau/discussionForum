@@ -5,7 +5,8 @@
 <body class = "background">
 	<div class="topBar">
 		<h1>Toppy</h1>
-		<%= @topic.name %>
+		<h2><%= @topic.name %></h2>
+		<h3><%= @topic.description %> </h3>
 	</div>
 
 	<% @topic.posts.each do |post| %>
@@ -39,7 +40,9 @@
 			<%= f.submit %>
 		</p>
 		<% end %>
-		<%= link_to 'Topic List', topics_path %>
+		<div class ="topicList">
+			<%= link_to 'Topic List', topics_path %>
+		</div>
 	</div>
 </body>
 </html>
